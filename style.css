@@ -1,0 +1,478 @@
+/* Nviro templet by ultrasdzcoder*/
+
+/* ===============================
+
+    1 - F R A M W O R K 
+    2 - H A E D E R 
+    3 - H E R O
+    4 - S E R V I C E
+    5 - W H O W E A R E
+    6 - T E S T I M O N I A L 
+    7 - F O O T E R
+    8 - M E D I A Q U E R Y
+    9 - A N I M A T I O N
+
+
+===============================*/
+
+/*  ===============F R A M W O R K ================ */
+
+:root {
+    --main-color: #F3A183;
+    --second-color: #687980;
+    --third-color: #f3bda1;
+    --fourd-color: #fefecc;
+}
+
+*, *::after, *::before, body, section, header, footer, main, div, span {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+h1, h2, h3 {
+    color: var(--main-color);
+}
+
+body {
+    position: relative;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.btn {
+    padding: 1.25em 3em;
+    max-width: 300px;
+    border: none;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    margin: 1.5em 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: var(--second-color);
+    color: #fff;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.26);
+    transition: background ease 300ms;
+}
+
+.btn:hover {
+    background-color: var(--main-color);
+}
+
+.btn-outline {
+    background-color: transparent;
+    outline: 2px solid var(--main-color);
+    color: var(--main-color);
+}
+
+.btn-outline:hover {
+    background-color: var(--main-color);
+    color: #fff;
+    box-shadow: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.cards, .col-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    background-color: var(--main-color);
+    text-align: center;
+    padding: 1em;
+    color: #fff;
+    font-size: large;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.26);
+    border-radius: 4%;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-content: center; */
+    overflow: hidden;
+}
+
+.card>* {
+    margin: .5em 0;
+}
+
+.card .title {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.card .avatar {
+    width: 50px;
+    height: 50px;
+    align-self: center;
+    border-radius: 100%;
+}
+
+.circel {
+    border-radius: 100%;
+}
+
+.circels {
+    margin-top: 1.5em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: .7em;
+}
+
+.circel-disactive {
+    background-color: var(--second-color);
+    padding: .7em;
+}
+
+.circel-active, .circel-disactive:hover {
+    background-color: var(--main-color);
+    transition: all ease-in 200ms;
+}
+
+.container {
+    padding: 1em;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 5em 0;
+}
+
+/*  ===============F R A M W O R K ================ */
+
+/*  ===============H A E D E R ================ */
+
+header {
+    z-index: -999;
+    display: flex;
+    justify-content: space-between;
+}
+
+header #logo h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+header #logo h1 span:first-child {
+    color: #fff;
+    background: var(--main-color);
+    border-radius: 50%;
+    padding: 10px 12px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+header #logo h1 span:last-child {
+    margin-left: 0;
+    letter-spacing: 4px;
+    color: var(--main-color);
+}
+
+header #contact {
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    color: rgb(66, 66, 66);
+}
+
+header #contact span {
+    color: var(--second-color);
+    font-weight: bold;
+}
+
+/*  ===============H A E D E R ================ */
+
+/*  ===============H E R O ================ */
+
+.hero-sec {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5%;
+}
+
+#hero h2 {
+    font-size: 4rem;
+    line-height: 1.25;
+    width: 7em;
+}
+
+.hero-text .subtitle {
+    margin-top: .8em;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--second-color);
+}
+
+.hero-text .ception {
+    margin-top: 4em;
+    font-size: 1.25rem;
+    width: 100%;
+    line-height: 1.3;
+    padding-bottom: 1em;
+}
+
+.hero-img {
+    width: 28em;
+    align-self: center;
+    justify-self: center;
+    padding: 1em;
+}
+
+/*  ===============H E R O ================ */
+
+/*  ===============S E R V I C E ================ */
+
+#service .col-3 {
+    display: grid;
+    justify-content: space-evenly;
+}
+
+#service .col-3 .elem {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1em;
+    line-height: 1.5;
+    padding: 2em 0;
+}
+
+#service .col-3 .elem h3 {
+    font-size: 1.5rem;
+    padding: 1em 0 5px 0;
+}
+
+#service .col-3 .elem .icon {
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid var(--main-color);
+    border-radius: 50%;
+    color: var(--main-color);
+    padding: 1em;
+}
+
+#service .col-3 .elem .icon:hover {
+    background-color: var(--second-color);
+    color: var(--third-color);
+}
+
+/*  ===============S E R V I C E ================ */
+
+/*  ===============W H O W E A R E================ */
+
+#whoWeAre {
+    background-color: #f3a1833d;
+}
+
+#whoWeAre .title {
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(17, 17, 17);
+    padding-bottom: 2em;
+}
+
+#whoWeAre .title span {
+    color: var(--main-color);
+}
+
+.elem {
+    display: flex;
+    gap: 5%;
+    margin: 1em 0;
+}
+
+.elem figure {
+    width: 40%;
+    height: auto;
+    padding: 1em 0;
+}
+
+.elem figure img {
+    height: 100%;
+}
+
+.explain {
+    width: 60%;
+    line-height: 1.5;
+}
+
+.explain h4 {
+    font-size: 2rem;
+    padding-bottom: 1em;
+}
+
+.explain .btn {
+    padding: 1em 2em;
+    max-width: 200px;
+}
+
+/*  ===============W H O W E A R E================ */
+
+/*  ===============T E S T I M O N I A L ================ */
+
+#testimonial header {
+    text-align: center;
+    flex-direction: column;
+    padding-bottom: 1em;
+}
+
+#testimonial header h3 {
+    font-size: 2rem;
+    padding-bottom: 1em;
+}
+
+/*  ===============T E S T I M O N I A L ================ */
+
+/*  ===============F O O T E R ================ */
+
+footer {
+    padding-top: 1em;
+    background-color: var(--main-color);
+    overflow-x: hidden;
+    height: auto;
+}
+
+.col-2 {
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.col-2 .text {
+    text-align: left;
+    font-size: 3rem;
+    color: #fff;
+    max-width: 80%;
+    line-height: 1.3;
+}
+
+.col-2 .text h3 {
+    color: rgb(0, 0, 0);
+}
+
+.col-2 .form form {
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    height: 100%;
+    padding: 1em;
+}
+
+.col-2 .form form input {
+    border: none;
+    padding: 1em;
+    border-bottom: 3px solid var(--second-color);
+}
+
+.col-2 .form form input:focus, .col-2 .form form textarea:focus {
+    outline: none;
+    border: none;
+}
+
+.col-2 .form form textarea {
+    resize: none;
+    height: 150px;
+    padding: 1em;
+    border: none;
+    border-bottom: 3px solid var(--second-color);
+}
+
+.download:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.copy {
+    width: 100%;
+    background-color: var(--second-color);
+    padding: 1em;
+    text-align: center;
+}
+
+/*  ===============F O O T E R ================ */
+
+/*  ===============M E D I A Q U E R Y ================ */
+
+@media all and (max-width:793px) {
+    .container {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        overflow: hidden;
+    }
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+    }
+    #hero {
+        background-color: #f3a18360;
+    }
+    #hero h2 {
+        font-size: 2.5rem;
+    }
+    .hero-text .subtitle {
+        font-size: x-large;
+    }
+    .hero-text p.ception {
+        font-size: medium;
+    }
+    .icon {
+        transform: scale(2);
+    }
+    .hero-sec {
+        min-width: 100%;
+        grid-template-columns: 1fr;
+    }
+    .col-3 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .elem {
+        flex-direction: column;
+    }
+    .elem figure, .explain {
+        width: 100%;
+    }
+    .cards, .col-3 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .col-2 {
+        grid-template-columns: 1fr;
+        grid-gap: 2em;
+    }
+    .btn {
+        min-width: 100%;
+        width: 100%;
+    }
+}
+
+/*  ===============M E D I A Q U E R Y ================ */
+
+/*  ===============A N I M A T I O N ================ */
+
+/* PUT HERE YOUR ANIMATION  */
+
+/*  ===============A N I M A T I O N ================ */
